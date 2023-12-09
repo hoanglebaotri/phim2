@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <div class = main_head>
+            <!-- <div class="bin">
+                <h1>PHIMOI.NET</h1>
+            </div> -->
+            <div class="text-container">
+                <span style="--color: #ffffff; --delay: 0s">P</span>
+                <span style="--color: #ffffff; --delay: 0.25s">H</span>
+                <span style="--color: #ffffff; --delay: 0.5s">I</span>
+                <span style="--color: #ffffff; --delay: 0.75s">M</span>
+                <span style="--color: #84BCDA; --delay: 1s">M</span>
+                <span style="--color: #84BCDA; --delay: 1.25s">O</span>
+                <span style="--color: #84BCDA; --delay: 1.5s">I</span>
+                <span style="--color: #DA4167; --delay: 1.75s">.</span>
+                <span style="--color: #DA4167; --delay: 2s">N</span>
+                <span style="--color: #DA4167; --delay: 2.25s">E</span>
+                <span style="--color: #C589E8; --delay: 2.5s">T</span>
+            </div>
+            <div class="head_left">
+                <a href="./bin.html"> Trang chủ </a>
+                <a href="./1.html"> Phim Hàn</a>
+                <a href="./My.html"> Phim Mỹ 
+                    <i class="nav-arrow-dow ti-angle-down"></i> 
+                </a>
+                <a href="./anime.html"> Anime</a>
+                <a href="./tq.html"> trung quốc</a>
+            </div>
+            <div class="group">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input class="input" type="search" placeholder="Search">
+            </div>
+        </div>
+       
+    </div>
+    <div id="body">
+        
+        <div class="tabble">
+            <div class="main_body">
+                <h1>PHIM NỔI BẬT</h1>
+                <div class="main_card">
+                    <div class="card_phim">
+                        <img src="./Thirty.jpg" alt="">                       
+                        <p>30 chưa phải là hết</p>
+                    </div>
+                    <div class="card_phim">
+                        <img src="./anh2.webp" alt="">
+                        <!-- chèn ảnh -->
+                        <p>hợp đồng tình yêu</p>
+                    </div>
+                    <div class="card_phim">
+                        <img src="./poster-mói-của-yeu-em-tù-cái-nhìn-dàu-tien-1.jpg" alt="">
+                        <!-- chèn ảnh -->
+                        <p>yêu em từ cái nhìn đầu tiên</p>
+                    </div>
+                    <div class="card_phim">
+                         <img src="" alt="">
+                        <!-- chèn ảnh -->
+                        <p> </p>
+                    </div>
+                </div>   
+            </div>
+            <div class="list_phim">
+                <!-- <h1>PHIM HOT</h1> -->
+                <div class="main_card">
+                    <div class="card_phim">
+                        <img src="./" alt="">
+                       <!-- chèn ảnh -->
+                       <p> </p>
+                   </div>
+                   <div class="card_phim">
+                        <img src="./" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <style>
+        
+            #head{
+            height: 60px;
+            background-color:gray;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .main_head{
+                display: flex;
+                justify-content: space-around;
+
+            }
+            .body{
+                display: inline-block;
+            }
+            .head_left a{
+                text-decoration: none;
+                line-height: 65px; 
+                margin-top: 0px;
+                
+                color: black; 
+                /* box-shadow: 0 0 10px rgba(0,0 ,0 ,0.3 );   */
+                /*(bóng đổ) */   
+                /* display : block; */
+                padding : 0px 24px;
+                display : inline-block; 
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+
+                
+            }
+            .head_left a:hover{
+                text-decoration: none;
+                line-height: 65px;
+                margin: 0%;
+                display: inline-block;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                
+                
+            }
+            #body_left img{
+                width: 20px;
+            }
+            .main_card{
+                display: flex;
+                margin: 10px;
+                position: relative;
+            }
+            .card_phim img{
+                width: 200px;
+
+
+            }
+            .card_phim{
+                margin: 20%;  
+                width: 180px;
+                height: 254px;
+                transition: all 0.2s;
+                position: relative;
+                cursor: pointer;  
+            }
+            .card_phim:hover{
+                transform: scale(1.04) rotate(1deg);
+            }
+
+            .main_card p{
+                color: beige;
+                text-align: center;
+                white-space: nowrap;
+                margin-right: 60px;
+                margin-top: 5px;
+            /* margin-left: 60px; */
+                text-transform: uppercase;
+                margin: 0 auto;
+                
+            
+                
+            }
+
+            .body_left img{
+                width: 200px;
+                display: inline-block;
+                
+            }
+            .body_left{
+                display: flex;
+                margin: 20px;
+            }
+
+            .main_card{
+                width: 200px;
+                
+
+            }
+            .main_body{
+                color:aliceblue;
+                margin-top: 30px;
+                font-style: normal;
+                font-weight: bold;
+                /* Font in đậm */
+                
+                margin-left: auto;
+                
+            }
+            .list_phim{
+                color:aliceblue;
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: bold;
+                margin-left: auto;
+                padding-top: 50px;
+            }
+            #body{
+                background-color: black; 
+                padding-top: 0px; 
+                position: relative;  
+                
+                
+            }
+            .bin{
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: bold;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+                letter-spacing: 8px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 10px;
+                letter-spacing: 2px;
+                text-shadow: 0 0 10px #0652dd,0 0 50px #0652dd,0 0 100px #0652dd;
+            }
+            .text-container > span{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                font-size: 40px;
+                text-transform: uppercase;
+                animation: glow 3s ease-in-out infinite;
+                animation-delay: var(--delay); 
+                
+            
+            }
+
+            @keyframes glow {
+                
+                0%,
+                100%{
+                    color: var(--color);
+                    text-shadow: 0 0 10px #0652dd,0 0 50px #0652dd,0 0 100px #0652dd;
+                }
+
+                10%,
+                90%{
+                    color: #111;
+                    text-shadow: none;
+                } 
+            }
+            .group {
+                display: flex;
+                line-height: 28px;
+                align-items: center;
+                position: relative;
+                max-width: 190px;
+                text-shadow: #999;
+            }
+            
+            .input {
+                height: 40px;
+                line-height: 28px;
+                padding: 0 1rem;
+                width: 100%;
+                padding-left: 2.5rem;
+                outline: none;
+                background: linear-gradient(180deg,     rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
+                color: #999;
+                transition: .3s ease;
+                border: 2px solid;
+                border-image: conic-gradient( #00F260, #0575E6,#64f38c) 1;
+            }
+            
+            .input::placeholder {
+                color: #999;
+            }
+            
+            .input:focus::placeholder {
+                color: #999;
+            }
+            
+            .icon {
+                position: absolute;
+                left: 1rem;
+                fill: #999;
+                width: 1rem;
+                height: 1rem;
+            }
+            .tabble{
+                height: 100%;
+                padding-top: 5px;
+                margin: 0 300px 0 300px;
+                background-color: #202221;
+                box-shadow: #00F260;
+                border-radius: 3px;
+                padding-bottom: 10px;
+                padding-bottom: 180px;
+                
+                
+            }
+  
+
+
+       </style>
+</body>
+</html>
